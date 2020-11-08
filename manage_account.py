@@ -2,8 +2,8 @@ from my_account import MyAccount
 
 
 class ManageAccount(MyAccount):
-    def __init__(self, name, address, age, acc_num, sort_code, balance):
-        super().__init__(name, address, age, acc_num, sort_code, balance)
+    def __init__(self, name, address, age, balance):
+        super().__init__(name, address, age, balance)
 
     def deposit(self, amount):
         if str(amount).isdigit():

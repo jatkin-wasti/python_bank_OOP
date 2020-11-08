@@ -1,8 +1,8 @@
 class AccountHolderDetails:
     def __init__(self, name, age):
-        self._name = name
-        self._address = ""
-        self._age = age
+        self.__name = name
+        self.__address = ""
+        self.__age = age
 
     # getter function for address
     @property
@@ -13,13 +13,13 @@ class AccountHolderDetails:
     # setter function for address
     @address.setter
     def address(self, address):
-        self._address = address
+        self.__address = address
 
     def display_holder_details(self):
         return f"Here are the account holder details for this account:\n" \
-               f"Name: {self._name}\n" \
-               f"Address: {self._address}\n" \
-               f"Age: {self._age}"
+               f"Name: {self.__name}\n" \
+               f"Address: {self.__address}\n" \
+               f"Age: {self.__age}"
 
 
 acc_test = AccountHolderDetails("Jamie", 47)
